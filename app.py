@@ -1,17 +1,19 @@
 import streamlit as st
 st.write("Hai")
-# import numpy as np
-# from PIL import Image
-# from skimage.feature import graycomatrix, graycoprops
-# from skimage.color import rgb2gray
-# from skimage import util
-# import joblib
-# import pandas as pd
-# import matplotlib.pyplot as plt
+import numpy as np
+from PIL import Image
+from skimage.feature import graycomatrix, graycoprops
+from skimage.color import rgb2gray
+from skimage import util
+import joblib
+import pandas as pd
+import matplotlib.pyplot as plt
 
 # # Load model and scaler
-# model = joblib.load("./model/glcm_model_v2.pkl")
-# scaler = joblib.load("./model/glcm_model_scaler.pkl")
+model = joblib.load("./model/glcm_model_v2.pkl")
+scaler = joblib.load("./model/glcm_model_scaler.pkl")
+st.write("Model loaded")
+st.write(model)
 # # Load test data for evaluation
 # try:
 #     X_test = joblib.load("X_test.pkl")
