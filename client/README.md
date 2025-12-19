@@ -1,1 +1,0 @@
-# Here lies the client script for demo
